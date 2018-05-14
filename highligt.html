@@ -1,0 +1,32 @@
+<!doctype html>
+  <html>
+  <head>
+  <meta charset="UTF-8">
+  <title>CS81 Unit 9</title>
+  <script>
+function highlight() {
+wordItems=document.getElementsByTagName('strong')
+
+   for (var i=0; i<wordItems.length; i++)
+   {                                                    
+    wordItems[i].style.color = "red";
+    }
+}
+ function dehighlight() {
+wordItems=document.getElementsByTagName('strong')
+
+   for (var i=0; i<wordItems.length; i++)
+   {                                                    
+    wordItems[i].style.color = "black";
+    }
+}
+ 
+</script>
+  </head>
+  <body> 
+
+<p onMouseOver="highlight()" onMouseOut="dehighlight()"><strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill.</strong></p>
+
+
+</body>
+</html>
